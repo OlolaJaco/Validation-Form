@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
+
+$light-green: hsl(148, 38%, 91%);
+$medium-green: hsl(169, 82%, 27%);
+$white: hsl(0, 0%, 100%);
+$grey-dark: hsl(187, 24%, 22%);
+$grey-medium:  hsl(186, 15%, 59%);
+
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Karla", sans-serif;
+    font-size: 16px;
+    background-color: $light-green;
+    display: flex;
+    height: 100vh;
+    position: relative;
+}
+
+.success {
+    background-color: $grey-dark;
+    width: fit-content;
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 12px;
+    position: absolute;
+    top: 31.9px;
+    left: 640px;
+    z-index: 1;
+    visibility: hidden;
+    h4, p {
+        margin: 5px 0;
+    }
+    h4 {
+        color: #fff;
+    }
+    p {
+        color: $grey-medium;
+    }
+}
+
+form {
+    background-color: $white;
+    margin: auto;
+    align-content: center;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 488px;
+    div {
+        margin-bottom: 10px;
+        margin-top: 5px;
+    }
+}
+
+.names {
+    display: flex;
+}
+
+
+.first, .last, .email {
+    label {
+        margin-top: 10px;
+    }
+}
+
+input {
+    padding: 10px 20px;
+    border-radius: 5px;
+    // This is the reason why there in space between the inputs and also the reason they arent touching edges like the rest
+    margin-right: 13px;
+    border: 1px solid black;
+}
+
+.error-border {
+    border: 1px solid red;
+}
+
+input, textarea:focus,:hover{
+    border-color: $medium-green;
+    outline: none;
+}
+
+.email input {
+    width: 90%;
+}
+
+.enquiry-support {
+    display: flex;
+    .enquiry, .support {
+        padding: 10px 10px;
+        border-radius: 5px;
+        border: 1px solid black;
+        margin-right: 13px;
+        width: 100%;
+        cursor: pointer;
+        input {
+            cursor: pointer;
+        }
+    }
+    .enquiry, .support:focus,:hover {
+        border-color: $medium-green;
+        outline: none;
+        background-color: $light-green;
+    }
+}
+
+textarea {
+    width: 96%;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 15px;
+}
+
+.check input {
+    cursor: pointer;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: $medium-green;
+    color: $white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+span {
+    color: $medium-green;
+}
+
+@media (max-width: 375px) {
+    body {
+        display:block;
+        height: 100vh;
+    }
+    form {
+        padding-right: 50px;
+    }
+    .names{
+        display: block;
+        width: 100%;
+    }
+    .enquiry-support {
+        display: block;
+        width: 100%;
+    }
+}
+
+.error {
+    color: red;
+}

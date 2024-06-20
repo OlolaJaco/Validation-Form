@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap");
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Karla", sans-serif;
+  font-size: 16px;
+  background-color: hsl(148, 38%, 91%);
+  display: flex;
+  height: 100vh;
+  position: relative;
+}
+
+.success {
+  background-color: hsl(187, 24%, 22%);
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 10px;
+  border-radius: 8px;
+  font-size: 12px;
+  position: absolute;
+  top: 31.9px;
+  left: 640px;
+  z-index: 1;
+  visibility: hidden;
+}
+.success h4, .success p {
+  margin: 5px 0;
+}
+.success h4 {
+  color: #fff;
+}
+.success p {
+  color: hsl(186, 15%, 59%);
+}
+
+form {
+  background-color: hsl(0, 0%, 100%);
+  margin: auto;
+  align-content: center;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 488px;
+}
+form div {
+  margin-bottom: 10px;
+  margin-top: 5px;
+}
+
+.names {
+  display: flex;
+}
+
+.first label, .last label, .email label {
+  margin-top: 10px;
+}
+
+input {
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin-right: 13px;
+  border: 1px solid black;
+}
+
+.error-border {
+  border: 1px solid red;
+}
+
+input, textarea:focus, :hover {
+  border-color: hsl(169, 82%, 27%);
+  outline: none;
+}
+
+.email input {
+  width: 90%;
+}
+
+.enquiry-support {
+  display: flex;
+}
+.enquiry-support .enquiry, .enquiry-support .support {
+  padding: 10px 10px;
+  border-radius: 5px;
+  border: 1px solid black;
+  margin-right: 13px;
+  width: 100%;
+  cursor: pointer;
+}
+.enquiry-support .enquiry input, .enquiry-support .support input {
+  cursor: pointer;
+}
+.enquiry-support .enquiry, .enquiry-support .support:focus, .enquiry-support :hover {
+  border-color: hsl(169, 82%, 27%);
+  outline: none;
+  background-color: hsl(148, 38%, 91%);
+}
+
+textarea {
+  width: 96%;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 15px;
+}
+
+.check input {
+  cursor: pointer;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: hsl(169, 82%, 27%);
+  color: hsl(0, 0%, 100%);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+span {
+  color: hsl(169, 82%, 27%);
+}
+
+@media (max-width: 375px) {
+  body {
+    display: block;
+    height: 100vh;
+  }
+  form {
+    padding-right: 50px;
+  }
+  .names {
+    display: block;
+    width: 100%;
+  }
+  .enquiry-support {
+    display: block;
+    width: 100%;
+  }
+}
+.error {
+  color: red;
+}/*# sourceMappingURL=style.css.map */
